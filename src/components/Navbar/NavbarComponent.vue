@@ -1,12 +1,12 @@
 <template>
-  <v-app-bar app :color="color" dark>
+  <v-app-bar :color="color" dark>
     <v-app-bar-nav-icon></v-app-bar-nav-icon>
 
     <v-toolbar-title>Inicio</v-toolbar-title>
 
     <v-spacer></v-spacer>
 
-    <v-btn :color="color" elevation="0"> Temas </v-btn>
+    <v-btn :color="color" elevation="0">Temas</v-btn>
     <v-divider vertical dark class="mx-2"></v-divider>
     <v-btn :color="color" elevation="0">Libros</v-btn>
     <v-divider vertical class="mx-2"></v-divider>
@@ -41,5 +41,3 @@ export default {
   }
 }
 </script>
-
-<style lang="scss" scoped></style>

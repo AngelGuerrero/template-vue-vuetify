@@ -1,7 +1,15 @@
 <template>
   <v-app>
+    <!-- Navbar donde se muestra el nombre de usuario -->
+    <navbar-account-component></navbar-account-component>
+
+    <!-- Navbar para mostrar el título del sitio -->
+    <navbar-title-component></navbar-title-component>
+
     <!-- Navbar principal -->
-    <navbar-component color="primary"></navbar-component>
+    <div>
+      <navbar-component color="indigo"></navbar-component>
+    </div>
 
     <v-main>
       <router-view></router-view>
@@ -10,13 +18,17 @@
 </template>
 
 <script>
+import NavbarAccountComponent from '@/components/Navbar/NavbarAccountComponent'
+import NavbarTitleComponent from '@/components/Navbar/NavbarTitleComponent'
 import NavbarComponent from '@/components/Navbar/NavbarComponent'
 
 export default {
   name: 'App',
 
   components: {
-    NavbarComponent
+    NavbarAccountComponent,
+    NavbarComponent,
+    NavbarTitleComponent
   }
 }
 </script>
